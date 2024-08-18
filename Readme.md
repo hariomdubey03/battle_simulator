@@ -1,6 +1,6 @@
-# BattleSimulator
+# Battle Simulator
 
-Base URLs: http://localhost:8000
+Base URLs: https://battle-simulator.hariomdubey.me
 
 # Pokemon
 
@@ -21,88 +21,88 @@ GET /v1/pokemon/list
 
 ```json
 {
-  "page": 1,
+  "page": 2,
   "has_next": true,
-  "has_prev": false,
+  "has_prev": true,
   "data": [
     {
-      "name": "Kartana",
-      "type1": "grass",
+      "name": "Buzzwole",
+      "type1": "bug",
+      "type2": "fighting",
+      "attack": 139,
+      "hp": 107,
+      "Category": "Legendary"
+    },
+    {
+      "name": "Pheromosa",
+      "type1": "bug",
+      "type2": "fighting",
+      "attack": 137,
+      "hp": 71,
+      "Category": "Legendary"
+    },
+    {
+      "name": "Solgaleo",
+      "type1": "psychic",
       "type2": "steel",
-      "attack": 181,
-      "hp": 59,
+      "attack": 137,
+      "hp": 137,
       "Category": "Legendary"
     },
     {
-      "name": "Rayquaza",
-      "type1": "dragon",
+      "name": "Xerneas",
+      "type1": "fairy",
+      "type2": "",
+      "attack": 131,
+      "hp": 126,
+      "Category": "Legendary"
+    },
+    {
+      "name": "Yveltal",
+      "type1": "dark",
       "type2": "flying",
-      "attack": 180,
-      "hp": 105,
+      "attack": 131,
+      "hp": 126,
       "Category": "Legendary"
     },
     {
-      "name": "Groudon",
-      "type1": "ground",
-      "type2": "",
-      "attack": 180,
-      "hp": 100,
-      "Category": "Legendary"
-    },
-    {
-      "name": "Hoopa",
-      "type1": "psychic",
-      "type2": "ghost",
-      "attack": 160,
-      "hp": 80,
-      "Category": "Legendary"
-    },
-    {
-      "name": "Diancie",
-      "type1": "rock",
+      "name": "Tapu Bulu",
+      "type1": "grass",
       "type2": "fairy",
-      "attack": 160,
-      "hp": 50,
+      "attack": 130,
+      "hp": 70,
       "Category": "Legendary"
     },
     {
-      "name": "Regigigas",
-      "type1": "normal",
-      "type2": "",
-      "attack": 160,
-      "hp": 110,
-      "Category": "Legendary"
-    },
-    {
-      "name": "Kyogre",
-      "type1": "water",
-      "type2": "",
-      "attack": 150,
-      "hp": 100,
-      "Category": "Legendary"
-    },
-    {
-      "name": "Mewtwo",
-      "type1": "psychic",
-      "type2": "",
-      "attack": 150,
+      "name": "Ho-Oh",
+      "type1": "fire",
+      "type2": "flying",
+      "attack": 130,
       "hp": 106,
       "Category": "Legendary"
     },
     {
-      "name": "Zekrom",
+      "name": "Latios",
       "type1": "dragon",
-      "type2": "electric",
-      "attack": 150,
-      "hp": 100,
+      "type2": "psychic",
+      "attack": 130,
+      "hp": 80,
       "Category": "Legendary"
     },
     {
-      "name": "Landorus",
-      "type1": "ground",
-      "type2": "flying",
-      "attack": 145,
-      "hp": 89,
+      "name": "Terrakion",
+      "type1": "rock",
+      "type2": "fighting",
+      "attack": 129,
+      "hp": 91,
+      "Category": "Legendary"
+    },
+    {
+      "name": "Meloetta",
+      "type1": "normal",
+      "type2": "psychic",
+      "attack": 128,
+      "hp": 100,
       "Category": "Legendary"
     }
   ]
@@ -134,7 +134,7 @@ HTTP Status Code **200**
 
 ## GET Battle Status
 
-GET /v1/pokemon/battle/c728770e-9a20-461a-bd93-930490150e1c
+GET /v1/pokemon/battle/d2e7affd-ad05-4995-833a-4044a62eeba4
 
 > Response Examples
 
@@ -197,7 +197,7 @@ POST /v1/pokemon/battle
 
 ```json
 {
-  "battle_id": "c728770e-9a20-461a-bd93-930490150e1c"
+  "battle_id": "83f89b93-cc27-4087-9192-77531b841c14"
 }
 ```
 
@@ -214,3 +214,4 @@ HTTP Status Code **202**
 |Name|Type|Required|Restrictions|Title|description|
 |---|---|---|---|---|---|
 |» battle_id|string|true|none||none|
+

@@ -31,9 +31,9 @@ SECRET_KEY = (
 )
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["battle-simulator.hariomdubey.me"]
 
 
 # Application definition
@@ -86,11 +86,11 @@ TIME_ZONE = os.getenv(key="TIME_ZONE", default="Asia/Kolkata")
 
 DB_HOST = os.getenv(
     key="DB_HOST",
-    default="localhost",
+    default="vyom.ccwa0cfjeete.eu-north-1.rds.amazonaws.com",
 )
 DB_NAME = os.getenv(key="DB_NAME", default="battle_simulator")
-DB_USER = os.getenv(key="DB_USER", default="root")
-DB_PASSWORD = os.getenv(key="DB_PASSWORD", default="Abcd.12345")
+DB_USER = os.getenv(key="DB_USER", default="battle_simulator_user")
+DB_PASSWORD = os.getenv(key="DB_PASSWORD", default="sdfkj234dd")
 DB_PORT = os.getenv(key="DB_PORT", default="3306")
 
 

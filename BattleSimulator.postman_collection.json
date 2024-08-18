@@ -15,7 +15,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base}}/v1/pokemon/list?page=2",
+							"raw": "{{base}}/v1/pokemon/list?page=3",
 							"host": [
 								"{{base}}"
 							],
@@ -27,7 +27,7 @@
 							"query": [
 								{
 									"key": "page",
-									"value": "2"
+									"value": "3"
 								}
 							]
 						}
@@ -39,7 +39,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base}}/v1/pokemon/list?page=1",
+									"raw": "{{base}}/v1/pokemon/list?page=2",
 									"host": [
 										"{{base}}"
 									],
@@ -51,7 +51,7 @@
 									"query": [
 										{
 											"key": "page",
-											"value": "1"
+											"value": "2"
 										}
 									]
 								}
@@ -62,15 +62,19 @@
 							"header": [
 								{
 									"key": "Date",
-									"value": "Sun, 18 Aug 2024 14:15:27 GMT"
-								},
-								{
-									"key": "Server",
-									"value": "WSGIServer/0.2 CPython/3.10.12"
+									"value": "Sun, 18 Aug 2024 17:36:52 GMT"
 								},
 								{
 									"key": "Content-Type",
 									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
 								},
 								{
 									"key": "Allow",
@@ -79,10 +83,6 @@
 								{
 									"key": "X-Frame-Options",
 									"value": "DENY"
-								},
-								{
-									"key": "Content-Length",
-									"value": "1000"
 								},
 								{
 									"key": "Vary",
@@ -99,10 +99,38 @@
 								{
 									"key": "Cross-Origin-Opener-Policy",
 									"value": "same-origin"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=x6wNbnp2%2F08UxfQ90IXRoISiJlH6qrl9Hgub6f4x41Sti%2Bc9TszzWB5s076xZOSm2%2BjXXmLQ1WpCcjRALKotUSBb%2FB3KJzZ52CbvmhbpHdl0rA4TG3KRZS7bW7HbEBcY6l8IM8W5B0iWehDXS9V7l0If\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8b53ab283f563fe8-BOM"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"page\": 1,\n    \"has_next\": true,\n    \"has_prev\": false,\n    \"data\": [\n        {\n            \"name\": \"Kartana\",\n            \"type1\": \"grass\",\n            \"type2\": \"steel\",\n            \"attack\": 181,\n            \"hp\": 59,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Rayquaza\",\n            \"type1\": \"dragon\",\n            \"type2\": \"flying\",\n            \"attack\": 180,\n            \"hp\": 105,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Groudon\",\n            \"type1\": \"ground\",\n            \"type2\": \"\",\n            \"attack\": 180,\n            \"hp\": 100,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Hoopa\",\n            \"type1\": \"psychic\",\n            \"type2\": \"ghost\",\n            \"attack\": 160,\n            \"hp\": 80,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Diancie\",\n            \"type1\": \"rock\",\n            \"type2\": \"fairy\",\n            \"attack\": 160,\n            \"hp\": 50,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Regigigas\",\n            \"type1\": \"normal\",\n            \"type2\": \"\",\n            \"attack\": 160,\n            \"hp\": 110,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Kyogre\",\n            \"type1\": \"water\",\n            \"type2\": \"\",\n            \"attack\": 150,\n            \"hp\": 100,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Mewtwo\",\n            \"type1\": \"psychic\",\n            \"type2\": \"\",\n            \"attack\": 150,\n            \"hp\": 106,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Zekrom\",\n            \"type1\": \"dragon\",\n            \"type2\": \"electric\",\n            \"attack\": 150,\n            \"hp\": 100,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Landorus\",\n            \"type1\": \"ground\",\n            \"type2\": \"flying\",\n            \"attack\": 145,\n            \"hp\": 89,\n            \"Category\": \"Legendary\"\n        }\n    ]\n}"
+							"body": "{\n    \"page\": 2,\n    \"has_next\": true,\n    \"has_prev\": true,\n    \"data\": [\n        {\n            \"name\": \"Buzzwole\",\n            \"type1\": \"bug\",\n            \"type2\": \"fighting\",\n            \"attack\": 139,\n            \"hp\": 107,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Pheromosa\",\n            \"type1\": \"bug\",\n            \"type2\": \"fighting\",\n            \"attack\": 137,\n            \"hp\": 71,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Solgaleo\",\n            \"type1\": \"psychic\",\n            \"type2\": \"steel\",\n            \"attack\": 137,\n            \"hp\": 137,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Xerneas\",\n            \"type1\": \"fairy\",\n            \"type2\": \"\",\n            \"attack\": 131,\n            \"hp\": 126,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Yveltal\",\n            \"type1\": \"dark\",\n            \"type2\": \"flying\",\n            \"attack\": 131,\n            \"hp\": 126,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Tapu Bulu\",\n            \"type1\": \"grass\",\n            \"type2\": \"fairy\",\n            \"attack\": 130,\n            \"hp\": 70,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Ho-Oh\",\n            \"type1\": \"fire\",\n            \"type2\": \"flying\",\n            \"attack\": 130,\n            \"hp\": 106,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Latios\",\n            \"type1\": \"dragon\",\n            \"type2\": \"psychic\",\n            \"attack\": 130,\n            \"hp\": 80,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Terrakion\",\n            \"type1\": \"rock\",\n            \"type2\": \"fighting\",\n            \"attack\": 129,\n            \"hp\": 91,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Meloetta\",\n            \"type1\": \"normal\",\n            \"type2\": \"psychic\",\n            \"attack\": 128,\n            \"hp\": 100,\n            \"Category\": \"Legendary\"\n        }\n    ]\n}"
 						},
 						{
 							"name": "Pokemon List - Name",
@@ -133,15 +161,19 @@
 							"header": [
 								{
 									"key": "Date",
-									"value": "Sun, 18 Aug 2024 14:15:56 GMT"
-								},
-								{
-									"key": "Server",
-									"value": "WSGIServer/0.2 CPython/3.10.12"
+									"value": "Sun, 18 Aug 2024 17:37:33 GMT"
 								},
 								{
 									"key": "Content-Type",
 									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
 								},
 								{
 									"key": "Allow",
@@ -150,10 +182,6 @@
 								{
 									"key": "X-Frame-Options",
 									"value": "DENY"
-								},
-								{
-									"key": "Content-Length",
-									"value": "151"
 								},
 								{
 									"key": "Vary",
@@ -170,6 +198,34 @@
 								{
 									"key": "Cross-Origin-Opener-Policy",
 									"value": "same-origin"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=%2BfHIFhKIPgLg9%2BVi5WCl4xsEIToQ2tmf9F3cCkv%2FpxLB6idE0%2Br5mP0zJuZxRrINtpzZFV0tsoHJsN4IyslYySiXAbKQddWdSkHDlO86%2FNbLRTbPKK04yQVx0z%2Ff%2F25N4VH1vnCBdtW1TFsbrqHbc0Co\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8b53ac27feb63fe8-BOM"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
 								}
 							],
 							"cookie": [],
@@ -183,7 +239,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base}}/v1/pokemon/battle/c728770e-9a20-461a-bd93-930490150e1c",
+							"raw": "{{base}}/v1/pokemon/battle/d2e7affd-ad05-4995-833a-4044a62eeba4",
 							"host": [
 								"{{base}}"
 							],
@@ -191,7 +247,7 @@
 								"v1",
 								"pokemon",
 								"battle",
-								"c728770e-9a20-461a-bd93-930490150e1c"
+								"d2e7affd-ad05-4995-833a-4044a62eeba4"
 							]
 						}
 					},
@@ -202,7 +258,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base}}/v1/pokemon/battle/c728770e-9a20-461a-bd93-930490150e1c",
+									"raw": "{{base}}/v1/pokemon/battle/d2e7affd-ad05-4995-833a-4044a62eeba4",
 									"host": [
 										"{{base}}"
 									],
@@ -210,7 +266,7 @@
 										"v1",
 										"pokemon",
 										"battle",
-										"c728770e-9a20-461a-bd93-930490150e1c"
+										"d2e7affd-ad05-4995-833a-4044a62eeba4"
 									]
 								}
 							},
@@ -220,15 +276,19 @@
 							"header": [
 								{
 									"key": "Date",
-									"value": "Sun, 18 Aug 2024 14:10:56 GMT"
-								},
-								{
-									"key": "Server",
-									"value": "WSGIServer/0.2 CPython/3.10.12"
+									"value": "Sun, 18 Aug 2024 17:38:06 GMT"
 								},
 								{
 									"key": "Content-Type",
 									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
 								},
 								{
 									"key": "Allow",
@@ -237,10 +297,6 @@
 								{
 									"key": "X-Frame-Options",
 									"value": "DENY"
-								},
-								{
-									"key": "Content-Length",
-									"value": "88"
 								},
 								{
 									"key": "Vary",
@@ -257,6 +313,34 @@
 								{
 									"key": "Cross-Origin-Opener-Policy",
 									"value": "same-origin"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=skwICTSP57j7FrSRMqFsM3kOBtQjTy1v9xjNz3g7mOuGKdTtxTWzec6cK%2Blv1i49qBIpRSDshqDmeo8dveVmjqNF8mUuiUbl%2F0aA4rf%2BjluadSqeVNYHHijKmb%2Ft3Ubf4dYGbw0LSPvq%2FcYg4rlMlkcu\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8b53acf78b493fe8-BOM"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
 								}
 							],
 							"cookie": [],
@@ -323,15 +407,19 @@
 							"header": [
 								{
 									"key": "Date",
-									"value": "Sun, 18 Aug 2024 14:10:07 GMT"
-								},
-								{
-									"key": "Server",
-									"value": "WSGIServer/0.2 CPython/3.10.12"
+									"value": "Sun, 18 Aug 2024 17:38:28 GMT"
 								},
 								{
 									"key": "Content-Type",
 									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
 								},
 								{
 									"key": "Allow",
@@ -340,10 +428,6 @@
 								{
 									"key": "X-Frame-Options",
 									"value": "DENY"
-								},
-								{
-									"key": "Content-Length",
-									"value": "52"
 								},
 								{
 									"key": "Vary",
@@ -360,10 +444,34 @@
 								{
 									"key": "Cross-Origin-Opener-Policy",
 									"value": "same-origin"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=v6YPZGg%2BVMId11%2BcpznwfwI%2BCV%2B0Hr6ZJ9txwHv%2FQg1vA%2FEXVZgooLWhO1h2jDvr7E6n8RP0uVhJOQSJoZjYhMe9wKgGc7qeTHnGZNF0k72pcNX421vXmlVE5yNEuL9XHrfeGiXqMMvjtwOhk%2BJb%2Fk2a\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8b53ad7fcddd3fe8-BOM"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"battle_id\": \"c728770e-9a20-461a-bd93-930490150e1c\"\n}"
+							"body": "{\n    \"battle_id\": \"83f89b93-cc27-4087-9192-77531b841c14\"\n}"
 						}
 					]
 				}
@@ -395,7 +503,7 @@
 	"variable": [
 		{
 			"key": "base",
-			"value": "http://localhost:8000",
+			"value": "https://battle-simulator.hariomdubey.me",
 			"type": "string"
 		}
 	]
