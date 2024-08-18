@@ -1,0 +1,402 @@
+{
+	"info": {
+		"_postman_id": "9c5cc5dd-ced3-4e2d-86e4-fa72d11016f7",
+		"name": "BattleSimulator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17200379"
+	},
+	"item": [
+		{
+			"name": "Pokemon",
+			"item": [
+				{
+					"name": "Pokemon List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/v1/pokemon/list?page=2",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"v1",
+								"pokemon",
+								"list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Pokemon List - Page No",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base}}/v1/pokemon/list?page=1",
+									"host": [
+										"{{base}}"
+									],
+									"path": [
+										"v1",
+										"pokemon",
+										"list"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 18 Aug 2024 14:15:27 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.12"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1000"
+								},
+								{
+									"key": "Vary",
+									"value": "Cookie"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"page\": 1,\n    \"has_next\": true,\n    \"has_prev\": false,\n    \"data\": [\n        {\n            \"name\": \"Kartana\",\n            \"type1\": \"grass\",\n            \"type2\": \"steel\",\n            \"attack\": 181,\n            \"hp\": 59,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Rayquaza\",\n            \"type1\": \"dragon\",\n            \"type2\": \"flying\",\n            \"attack\": 180,\n            \"hp\": 105,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Groudon\",\n            \"type1\": \"ground\",\n            \"type2\": \"\",\n            \"attack\": 180,\n            \"hp\": 100,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Hoopa\",\n            \"type1\": \"psychic\",\n            \"type2\": \"ghost\",\n            \"attack\": 160,\n            \"hp\": 80,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Diancie\",\n            \"type1\": \"rock\",\n            \"type2\": \"fairy\",\n            \"attack\": 160,\n            \"hp\": 50,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Regigigas\",\n            \"type1\": \"normal\",\n            \"type2\": \"\",\n            \"attack\": 160,\n            \"hp\": 110,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Kyogre\",\n            \"type1\": \"water\",\n            \"type2\": \"\",\n            \"attack\": 150,\n            \"hp\": 100,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Mewtwo\",\n            \"type1\": \"psychic\",\n            \"type2\": \"\",\n            \"attack\": 150,\n            \"hp\": 106,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Zekrom\",\n            \"type1\": \"dragon\",\n            \"type2\": \"electric\",\n            \"attack\": 150,\n            \"hp\": 100,\n            \"Category\": \"Legendary\"\n        },\n        {\n            \"name\": \"Landorus\",\n            \"type1\": \"ground\",\n            \"type2\": \"flying\",\n            \"attack\": 145,\n            \"hp\": 89,\n            \"Category\": \"Legendary\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Pokemon List - Name",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base}}/v1/pokemon/list?name=Pheromosa",
+									"host": [
+										"{{base}}"
+									],
+									"path": [
+										"v1",
+										"pokemon",
+										"list"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Pheromosa"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 18 Aug 2024 14:15:56 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.12"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "151"
+								},
+								{
+									"key": "Vary",
+									"value": "Cookie"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"page\": 1,\n    \"has_next\": false,\n    \"has_prev\": false,\n    \"data\": [\n        {\n            \"name\": \"Pheromosa\",\n            \"type1\": \"bug\",\n            \"type2\": \"fighting\",\n            \"attack\": 137,\n            \"hp\": 71,\n            \"Category\": \"Legendary\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Battle Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/v1/pokemon/battle/c728770e-9a20-461a-bd93-930490150e1c",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"v1",
+								"pokemon",
+								"battle",
+								"c728770e-9a20-461a-bd93-930490150e1c"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Battle Status",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base}}/v1/pokemon/battle/c728770e-9a20-461a-bd93-930490150e1c",
+									"host": [
+										"{{base}}"
+									],
+									"path": [
+										"v1",
+										"pokemon",
+										"battle",
+										"c728770e-9a20-461a-bd93-930490150e1c"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 18 Aug 2024 14:10:56 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.12"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "88"
+								},
+								{
+									"key": "Vary",
+									"value": "Cookie"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"status\": \"BATTLE_COMPLETED\",\n        \"result\": {\n            \"winnerName\": \"ekans\",\n            \"wonByMargin\": 7.5\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Perform Battle",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pokemon_a\": \"Ekans\",\n    \"pokemon_b\": \"Electrike\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/v1/pokemon/battle",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"v1",
+								"pokemon",
+								"battle"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Perform Battle",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"pokemon_a\": \"Ekans\",\n    \"pokemon_b\": \"Electrike\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base}}/v1/pokemon/battle",
+									"host": [
+										"{{base}}"
+									],
+									"path": [
+										"v1",
+										"pokemon",
+										"battle"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 18 Aug 2024 14:10:07 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.12"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "Vary",
+									"value": "Cookie"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"battle_id\": \"c728770e-9a20-461a-bd93-930490150e1c\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base",
+			"value": "http://localhost:8000",
+			"type": "string"
+		}
+	]
+}
